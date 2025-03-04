@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <title>Cristian Herrera</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+	
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1000">
+                <span>
+
+                </span>
+            </div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"><a href="#about">Sobre mí</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><a href="#about2">Habilidades</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"><a href="#">Proyectos</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"><a href="#">Contacto</a></div>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+        <div class="dropdown">
+            <div class="links">
+                <a href="">Sobre mí</a>
+                <a href="">Habilidades</a>
+                <a href="">Proyectos</a>
+                <a href="">Contacto</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+    <section class="inicio" id="inicio">
+        <div class="main-container">
+            <div class="image" data-aos="zoom-in-right" data-aos-duration="2500">
+
+
+            </div>
+            <div class="content">
+                <h1 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800">Cristian Herrera <span></span></h1>
+                <p data-aos="flip-up" data-aos-duration="1000" data-aos-delay="1000">Desarrollador Frontend y Tester Manual</p>
+                <div class="btn" data-aos="zoom-out-left" data-aos-duration="1000" data-aos-delay="1300">
+                    <button>Contactame</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <section class="about" id="about">
+            
+            <div class="about-content">
+                <h2 class="heading">Sobre mí</h2>
+                <p>Hola, soy Cristian Josué Herrera Bermúdez, un desarrollador front-end y tester manual enfocado en crear experiencias web funcionales e intuitivas. Me especializo en HTML, CSS, PHP, Laravel, JavaScript y MySQL Server. Disfruto enfrentar nuevos retos tecnológicos y perfeccionar mis habilidades para contribuir al éxito de cada proyecto en el que trabajo.</p>
+                <div class="btn" data-aos="zoom-out-left" data-aos-duration="1000" data-aos-delay="1300">
+                    <button id="downloadBtn">Descargar CV</button>
+                </div>
+            </div>
+            <div class="about-img">
+                <img src="foto.png" height="452">
+            </div>
+        </section>
+
+        <section class="skill" id="skill">
+            <h2 class="heading">Habilidades</h2>
+            <div class="horizontal-bars">
+                <div class="bar">
+                    <div class="info">
+                        <span>HTML</span>
+                    </div>
+                    <div class="progress-line html">
+                        <span></span>
+                    </div>
+                </div>
+                <div class="bar">
+                    <div class="info">
+                        <span>CSS</span>
+                    </div>
+                    <div class="progress-line css">
+                        <span></span>
+                    </div>
+                </div>
+                <div class="bar">
+                    <div class="info">
+                        <span>PHP</span>
+                    </div>
+                    <div class="progress-line php">
+                        <span></span>
+                    </div>
+                </div>
+                <div class="bar">
+                    <div class="info">
+                        <span>Laravel</span>
+                    </div>
+                    <div class="progress-line laravel">
+                        <span></span>
+                    </div>
+                </div>
+                <div class="bar">
+                    <div class="info">
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="progress-line javascript">
+                        <span></span>
+                    </div>
+                </div>
+                <div class="bar">
+                    <div class="info">
+                        <span>MySQL Server</span>
+                    </div>
+                    <div class="progress-line mysql">
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+
+        <section class="contact" id="contact">
+            <div class="container">
+                <div class="heading text-center">
+                    <h2>Contacto</h2>
+                    <p>¿Tienes una idea o proyecto y necesitas ayuda para desarrollarlo? Escríbeme y trabajemos juntos para hacerlo realidad.</p>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                    
+                        
+                    </div>
+    
+                    <div class="col-md-7">
+    
+                        <form>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <input type="text" class="form-control" placeholder="Nombre">
+                                </div>
+                                <div class="col-sm-6">
+                                    <input type="email" class="form-control" placeholder="Gmail">
+                                </div>
+                                <div class="col-sm-12">
+                                    <input type="text" class="form-control" placeholder="Asunto">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control" rows="5" id="comment" placeholder="Mensaje"></textarea>
+                            </div>
+                            <button class="btn btn-block" type="submit">Enviar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+            
+            <footer class="footer-07">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-md-12 text-center">          
+                <ul class="ftco-footer-social p-0">
+                  <li class="ftco-animate"><a href="https://www.linkedin.com/in/cristianjosueherrera/" data-toggle="tooltip" data-placement="top" title="Linkedin"><span class="ion-logo-linkedin"></span></a></li>
+                  <li class="ftco-animate"><a href="https://github.com/Cristian0Herrera" data-toggle="tooltip" data-placement="top" title="Github"><span class="ion-logo-github"></span></a></li>
+                  <li class="ftco-animate"><a href="usss108822@ugb.edu.sv" data-toggle="tooltip" data-placement="top" title="Gmail"><span class="ion-ios-mail"></span></a></li>
+                  <li class="ftco-animate"><a href="+503 7621-6020" data-toggle="tooltip" data-placement="top" title="Teléfono"><span class="ion-ios-phone-portrait"></span></a></li>
+                </ul>
+                    </div>
+                    </div>
+                    <div class="row mt-5">
+                        <div class="col-md-12 text-center">
+                            <p class="copyright">
+                          Copyright &copy;<script>document.write(new Date().getFullYear());</script> Todos los derechos reservados | Cristian Herrera </a>
+                          </p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            
+    
+        <script src="js/jquery.min.js"></script>
+        <script src="js/popper.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
+
+        <script>
+            document.getElementById("downloadBtn").addEventListener("click", function() {
+                const link = document.createElement("a");
+                link.href = "docs/ivania.pdf"; 
+                link.download = "ivania.pdf"; 
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+            });
+        </script>
+
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init({offset:0});
+        </script>
+        <script>
+            function hamburg(){
+                const navbar = document.querySelector(".dropdown")
+                navbar.style.transform = "translateY(0px)"
+            }
+            function cancel(){
+                const navbar = document.querySelector(".dropdown")
+                navbar.style.transform = "translateY(-500px)"
+            }
+        </script>
+</body>
+</html>
