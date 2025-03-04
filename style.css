@@ -235,7 +235,7 @@ section{
 }
 
 .about-img img {
-    width: 35vw;
+    width: 43vw;
     margin-right: 100px;
 }
 
@@ -252,6 +252,7 @@ section{
 .about-content  p {
     font-size: 1rem;
     margin: 1rem 0 3rem;
+    text-align: justify;
 }
 
 section {
