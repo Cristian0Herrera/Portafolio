@@ -1,217 +1,318 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
-    <title>Cristian Herrera</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
-	
-    <link rel="stylesheet" href="css/ionicons.min.css">
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <nav>
-        <div class="nav-container">
-            <div class="logo" data-aos="zoom-in" data-aos-duration="1000">
-                <span>
-
-                </span>
-            </div>
-            <div class="links">
-                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"><a href="#about">Sobre mí</a></div>
-                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><a href="#skill">Habilidades</a></div>
-                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"><a href="#">Proyectos</a></div>
-                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"><a href="#">Contacto</a></div>
-            </div>
-            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="Cristian Herrera, QA Manual Tester y desarrollador Frontend en El Salvador."
+    />
+    <title>Cristian Herrera | QA & Frontend</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <nav class="wrap nav">
+        <button
+          id="menu"
+          aria-expanded="false"
+          aria-controls="links"
+          aria-label="Abrir menú"
+        >
+          Menú
+        </button>
+        <div id="links">
+          <a href="#experiencia">Experiencia</a
+          ><a href="#habilidades">Habilidades</a
+          ><a href="#proyectos">Proyectos</a><a href="#formacion">Formación</a
+          ><a class="nav-contact" href="#contacto">Contacto</a>
         </div>
-        <div class="dropdown">
-            <div class="links">
-                <a href="">Sobre mí</a>
-                <a href="">Habilidades</a>
-                <a href="">Proyectos</a>
-                <a href="">Contacto</a>
-                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
-            </div>
+      </nav>
+    </header>
+    <main class="wrap">
+      <section id="inicio" class="hero">
+        <div>
+          <h1>
+            Software que<br />funciona.<br /><em>Calidad que importa.</em>
+          </h1>
+          <p class="lead">
+            Soy Cristian Josué Herrera Bermúdez. Combino pruebas manuales y
+            desarrollo web para contribuir a productos funcionales, confiables y
+            centrados en el usuario.
+          </p>
+          <div class="actions">
+            <a class="btn primary" href="#proyectos">Explorar proyectos</a
+            ><a class="btn" href="docs/cv-cristian.pdf" download
+              >Descargar CV</a
+            >
+          </div>
         </div>
-    </nav>
-    <section class="inicio" id="inicio">
-        <div class="main-container">
-            <div class="image" data-aos="zoom-in-right" data-aos-duration="2500">
-
-
-            </div>
-            <div class="content">
-                <h1 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800">Cristian Herrera <span></span></h1>
-                <p data-aos="flip-up" data-aos-duration="1000" data-aos-delay="1000">Desarrollador Frontend y Tester Manual</p>
-                <div class="btn" data-aos="zoom-out-left" data-aos-duration="1000" data-aos-delay="1300">
-                    <button>Contactame</button>
-                </div>
-            </div>
+        <aside class="terminal">
+          <div class="terminal-top">
+            <i></i><i></i><i></i><span>quality.check</span>
+          </div>
+          <div class="terminal-body">
+            <p class="muted">// Mi enfoque de calidad</p>
+            <p><span class="accent">01</span> Analizar requisitos</p>
+            <p><span class="accent">02</span> Diseñar casos de prueba</p>
+            <p><span class="accent">03</span> Ejecutar y documentar</p>
+            <p><span class="accent">04</span> Verificar correcciones</p>
+            <div class="terminal-foot">✓ Calidad como prioridad</div>
+          </div>
+        </aside>
+      </section>
+      <section id="experiencia">
+        <h2>Experiencia y perfil</h2>
+        <div class="two">
+          <article class="card">
+            <p class="eyebrow">2023 — 2026</p>
+            <h3>CASS</h3>
+            <p class="accent">Apoyo en Quality Assurance</p>
+            <ul>
+              <li>Pruebas manuales y validación de funcionalidades.</li>
+              <li>Identificación, documentación y seguimiento de defectos.</li>
+              <li>Colaboración con equipos de desarrollo.</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Sobre mí</h3>
+            <p>
+              Estudiante de último año de Ingeniería en Sistemas y Redes
+              Informáticas. Mi formación en programación complementa mi
+              capacidad para analizar aplicaciones, comprender su comportamiento
+              e identificar inconsistencias.
+            </p>
+            <p>Español nativo · Inglés básico.</p>
+          </article>
         </div>
-    </section>
-
-        <section class="about" id="about">
-            
-            <div class="about-content">
-                <h2 class="heading">Sobre mí</h2>
-                <p>Hola, soy Cristian Josué Herrera Bermúdez, un desarrollador front-end y tester manual enfocado en crear experiencias web funcionales e intuitivas. Me especializo en HTML, CSS, PHP, Laravel, JavaScript y MySQL Server. Disfruto enfrentar nuevos retos tecnológicos y perfeccionar mis habilidades para contribuir al éxito de cada proyecto en el que trabajo.</p>
-                <div class="btn" data-aos="zoom-out-left" data-aos-duration="1000" data-aos-delay="1300">
-                    <button id="downloadBtn">Descargar CV</button>
-                </div>
+      </section>
+      <section id="habilidades">
+        <h2>Mi caja de herramientas</h2>
+        <div class="three">
+          <article class="card">
+            <h3>01. Testing manual</h3>
+            <p>
+              Pruebas funcionales, exploratorias, de regresión y retesting.
+              Diseño y ejecución de casos de prueba.
+            </p>
+          </article>
+          <article class="card">
+            <h3>02. Calidad de interfaz</h3>
+            <p>
+              Pruebas responsive, compatibilidad entre navegadores y validación
+              de funcionalidades.
+            </p>
+          </article>
+          <article class="card">
+            <h3>03. Gestión de defectos</h3>
+            <p>
+              Reporte de bugs, documentación y seguimiento del ciclo de vida de
+              defectos.
+            </p>
+          </article>
+          <article class="card wide">
+            <h3>Herramientas QA</h3>
+            <div class="tags">
+              <span>Azure DevOps</span><span>Git</span><span>GitHub</span
+              ><span>Microsoft Excel</span><span>Chrome DevTools</span>
             </div>
-            <div class="about-img">
-                <img src="foto.png" height="452">
+          </article>
+          <article class="card">
+            <h3>Desarrollo de software</h3>
+            <div class="tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span
+              ><span>TypeScript</span><span>React</span>
             </div>
-        </section>
+          </article>
+        </div>
+      </section>
+      <section id="proyectos">
+        <h2>Proyectos seleccionados</h2>
+        <div class="filters" aria-label="Filtrar proyectos">
+          <button aria-pressed="true" data-filter="all">Todos</button
+          ><button aria-pressed="false" data-filter="gestion">Gestión</button
+          ><button aria-pressed="false" data-filter="web">Web</button>
+        </div>
+        <div class="two" id="projects">
+          <article class="card project" data-category="gestion">
+            <button
+              type="button"
+              class="project-art project-open"
+              data-project="RutiCard"
+              aria-label="Ver más sobre RutiCard"
+              aria-haspopup="dialog"
+            >
+              <img
+                src="RutiCard.png"
+                alt="Captura de RutiCard"
+                loading="lazy"
+              /><span class="project-overlay">Ver más </span>
+            </button>
+            <p class="eyebrow">Frontend y QA · 2026</p>
+            <h3>RutiCard</h3>
+            <p>
+              Control de marcación de conductores de buses: registro de
+              asistencia, horarios, rutas y seguimiento de puntualidad para
+              mejorar el control operativo del transporte colectivo.
+            </p>
+            <a href="https://github.com/Cristian0Herrera/ruticard"
+              >Repositorio</a
+            >
+          </article>
 
-        <section class="skill" id="skill">
-            <h2 class="heading">Habilidades</h2>
-            <div class="horizontal-bars">
-                <div class="bar">
-                    <div class="info">
-                        <span>HTML</span>
-                    </div>
-                    <div class="progress-line html">
-                        <span></span>
-                    </div>
-                </div>
-                <div class="bar">
-                    <div class="info">
-                        <span>CSS</span>
-                    </div>
-                    <div class="progress-line css">
-                        <span></span>
-                    </div>
-                </div>
-                <div class="bar">
-                    <div class="info">
-                        <span>PHP</span>
-                    </div>
-                    <div class="progress-line php">
-                        <span></span>
-                    </div>
-                </div>
-                <div class="bar">
-                    <div class="info">
-                        <span>Laravel</span>
-                    </div>
-                    <div class="progress-line laravel">
-                        <span></span>
-                    </div>
-                </div>
-                <div class="bar">
-                    <div class="info">
-                        <span>JavaScript</span>
-                    </div>
-                    <div class="progress-line javascript">
-                        <span></span>
-                    </div>
-                </div>
-                <div class="bar">
-                    <div class="info">
-                        <span>MySQL Server</span>
-                    </div>
-                    <div class="progress-line mysql">
-                        <span></span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        
-
-        <section class="contact" id="contact">
-            <div class="container">
-                <div class="heading text-center">
-                    <h2>Contacto</h2>
-                    <p>¿Tienes una idea o proyecto y necesitas ayuda para desarrollarlo? Escríbeme y trabajemos juntos para hacerlo realidad.</p>
-                </div>
-                <div class="row">
-                    <div class="col-md-3">
-                    
-                        
-                    </div>
-    
-                    <div class="col-md-7">
-    
-                        <form>
-                            <div class="row">
-                                <div class="col-sm-6">
-                                    <input type="text" class="form-control" placeholder="Nombre">
-                                </div>
-                                <div class="col-sm-6">
-                                    <input type="email" class="form-control" placeholder="Gmail">
-                                </div>
-                                <div class="col-sm-12">
-                                    <input type="text" class="form-control" placeholder="Asunto">
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <textarea class="form-control" rows="5" id="comment" placeholder="Mensaje"></textarea>
-                            </div>
-                            <button class="btn btn-block" type="submit">Enviar</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </section>
-            
-            <footer class="footer-07">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-md-12 text-center">          
-                <ul class="ftco-footer-social p-0">
-                  <li class="ftco-animate"><a href="https://www.linkedin.com/in/cristianjosueherrera/" data-toggle="tooltip" data-placement="top" title="Linkedin"><span class="ion-logo-linkedin"></span></a></li>
-                  <li class="ftco-animate"><a href="https://github.com/Cristian0Herrera" data-toggle="tooltip" data-placement="top" title="Github"><span class="ion-logo-github"></span></a></li>
-                  <li class="ftco-animate"><a href="usss108822@ugb.edu.sv" data-toggle="tooltip" data-placement="top" title="Gmail"><span class="ion-ios-mail"></span></a></li>
-                  <li class="ftco-animate"><a href="+503 7621-6020" data-toggle="tooltip" data-placement="top" title="Teléfono"><span class="ion-ios-phone-portrait"></span></a></li>
-                </ul>
-                    </div>
-                    </div>
-                    <div class="row mt-5">
-                        <div class="col-md-12 text-center">
-                            <p class="copyright">
-                          Copyright &copy;<script>document.write(new Date().getFullYear());</script> Todos los derechos reservados | Cristian Herrera </a>
-                          </p>
-                        </div>
-                    </div>
-                </div>
-            </footer>
-            
-    
-        <script src="js/jquery.min.js"></script>
-        <script src="js/popper.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/main.js"></script>
-
-        <script>
-            document.getElementById("downloadBtn").addEventListener("click", function() {
-                const link = document.createElement("a");
-                link.href = "docs/portafolio-cristian-herrera.pdf"; 
-                link.download = "portafolio-cristian-herrera.pdf"; 
-                document.body.appendChild(link);
-                link.click();
-                document.body.removeChild(link);
-            });
-        </script>
-
-        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-        <script>
-          AOS.init({offset:0});
-        </script>
-        <script>
-            function hamburg(){
-                const navbar = document.querySelector(".dropdown")
-                navbar.style.transform = "translateY(0px)"
-            }
-            function cancel(){
-                const navbar = document.querySelector(".dropdown")
-                navbar.style.transform = "translateY(-500px)"
-            }
-        </script>
-</body>
+          <article class="card project" data-category="web">
+            <button
+              type="button"
+              class="project-art project-open"
+              data-project="RefugioSOS"
+              aria-label="Ver más sobre RefugioSOS"
+              aria-haspopup="dialog"
+            >
+              <img
+                src="RefugioSOS1.png"
+                alt="Captura de RefugioSOS"
+                loading="lazy"
+              /><span class="project-overlay">Ver más </span>
+            </button>
+            <p class="eyebrow">Frontend y QA · 2024</p>
+            <h3>RefugioSOS</h3>
+            <p>
+              Aplicación web que facilita el acceso de personas refugiadas a
+              albergues, recursos y servicios esenciales.
+            </p>
+            <a href="https://github.com/Cristian0Herrera/refugiosos.github.io"
+              >Repositorio</a
+            >
+          </article>
+          <article class="card project" data-category="web">
+            <button
+              type="button"
+              class="project-art project-open"
+              data-project="Hotel Buena Vista"
+              aria-label="Ver más sobre Hotel Buena Vista"
+              aria-haspopup="dialog"
+            >
+              <img
+                src="Hotel Buena Vista.png"
+                alt="Captura de Hotel Buena Vista"
+                loading="lazy"
+              /><span class="project-overlay">Ver más </span>
+            </button>
+            <p class="eyebrow">Frontend y QA · 2023</p>
+            <h3>Hotel Buena Vista</h3>
+            <p>
+              Sitio informativo de servicios, instalaciones, promociones y
+              reservaciones.
+            </p>
+            <a href="https://github.com/Cristian0Herrera/Hotel-Buena-Vista"
+              >Repositorio</a
+            >
+          </article>
+          <article class="card project" data-category="gestion">
+            <button
+              type="button"
+              class="project-art project-open"
+              data-project="Lectores sin Rumbo"
+              aria-label="Ver más sobre Lectores sin Rumbo"
+              aria-haspopup="dialog"
+            >
+              <img
+                src="Lectores sin Rumbo1.png"
+                alt="Captura de Lectores sin Rumbo"
+                loading="lazy"
+              /><span class="project-overlay">Ver más </span>
+            </button>
+            <p class="eyebrow">Frontend y QA · 2022</p>
+            <h3>Lectores sin Rumbo</h3>
+            <p>
+              Sistema de gestión bibliográfica para organizar libros y controlar
+              préstamos.
+            </p>
+            <a href="https://github.com/monicacampos1/Lectores-sin-rumbo"
+              >Repositorio</a
+            >
+          </article>
+        </div>
+      </section>
+      <section id="formacion">
+        <h2>Formación y certificaciones</h2>
+        <div class="two">
+          <article class="card">
+            <h3>Ingeniería en Sistemas y Redes Informáticas</h3>
+            <p>Universidad Gerardo Barrios · 2022–Actualidad</p>
+            <hr />
+            <h3>Técnico Vocacional en Desarrollo de Software</h3>
+            <p>Instituto Nacional de Usulután · 2019–2021</p>
+          </article>
+          <article class="card">
+            <h3>Certificaciones</h3>
+            <p>
+              <a
+                href="https://capacitateparaelempleo.org/verifica/6b2e08fa-29b5-4603-8f12-c6ed8606ff27/8fbb8f7b-c442-4077-90f3-03978e6fd0dc"
+                >Introducción a la programación</a
+              >
+            </p>
+            <p>
+              <a
+                href="https://www.credly.com/users/cristian-josue-bermudez/badges/credly"
+                >Certificaciones en Redes – Cisco Networking Academy</a
+              >
+            </p>
+          </article>
+        </div>
+      </section>
+      <section id="contacto" class="contact card">
+        <h2>Hablemos de tu próximo proyecto.</h2>
+        <p>
+          Interesado en oportunidades de QA Manual y colaboración en proyectos
+          de software.
+        </p>
+        <div class="actions">
+          <a class="btn primary" href="mailto:cristian.herrera.3dsw@gmail.com"
+            >Enviar correo</a
+          ><a
+            class="btn"
+            href="https://www.linkedin.com/in/cristianjosueherrera/"
+            >LinkedIn</a
+          ><a class="btn" href="https://github.com/Cristian0Herrera">GitHub</a>
+        </div>
+      </section>
+    </main>
+    <dialog id="project-dialog" aria-labelledby="project-title">
+      <div class="modal-inner">
+        <button class="modal-close" type="button" aria-label="Cerrar detalles">
+          ×
+        </button>
+        <div class="modal-gallery">
+          <img id="slide-image" alt="" /><button
+            class="slide-prev"
+            type="button"
+            aria-label="Imagen anterior"
+          >
+            Anterior</button
+          ><button
+            class="slide-next"
+            type="button"
+            aria-label="Imagen siguiente"
+          >
+            Siguiente</button
+          ><span id="slide-count" aria-live="polite"></span>
+        </div>
+        <div class="modal-info">
+          <h2 id="project-title"></h2>
+          <p id="project-description"></p>
+          <p><strong>Rol:</strong> Desarrollador Frontend y QA Manual</p>
+          <div class="tags" id="project-tech"></div>
+          <a
+            id="project-repo"
+            class="btn"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Ver repositorio en GitHub</a
+          >
+        </div>
+      </div>
+    </dialog>
+  </body>
 </html>
